@@ -5,13 +5,9 @@ Breast cancer is the most common cancer among women worldwide, accounting for 25
 cases and affected two point one million people in 2015, early diagnosis significantly increases the.
 chances of survival.
 
-The key challenge in cancer detection is how to classify tumors into malignant or benign machine learning
+The key challenge in cancer detection is how to classify tumors into malignant or benign machine learning techniques can dramatically improves the accuracy of diagnosis.
 
-techniques can dramatically improves the accuracy of diagnosis.
-
-Research indicates that most experienced physicians can diagnose cancers with 79 percent accuracy,
-
-while 91 percent correct diagnosis is achieved using machine learning techniques in this case study.
+Research indicates that most experienced physicians can diagnose cancers with 79 percent accuracy, while 91 percent correct diagnosis is achieved using machine learning techniques in this case study.
 
 Our task is to classify tumors into malignant or benign tumors using features of patients from several detect the cancer is benign.
 
@@ -20,62 +16,16 @@ And in this case study, we have 212 malignant cases and 357 benign cases.
 
 So it's kind of the output is a binary in a form indicating zero or one for malignant or benign. and I thought SVM was present for support vector machine.
 
-we're going to simply use as well the matrix inside, which is kind of a classification
+machine learning techniques was able to classify tumors effectively into - Malignant - Benign ,at the images and tell us, this cancer is malignant or malignant and this cancer is benign, right where the tumor is benign.
 
-so as we saw that machine learning techniques was able to classify tumors effectively into
+So as part of the conclusion, part of the benefits of that case study is that our early breast cancer detection can dramatically save lives, especially in the developing world.
 
-And that's assuming that we don't have any deep learning or any feature detection of whatsoever.
+the technique can be further improved by combining computer vision and machine learning and deep learning techniques to classify cancer directly using tissue images.
 
-Obviously, you know what kind of a second opinion that would be great.
-
-But, you know, now we've seen the machine learning model that can simply look at the features, look
-
-at the images and tell us, this cancer is malignant or malignant and this cancer is benign, right where the tumor is benign.
-
-So as part of the conclusion, part of the benefits of that case study is that our early breast cancer
-
-detection can dramatically save lives, especially in the developing world.
-
-
-And again, as we mentioned, the technique can be further improved by combining computer vision and
-
-machine learning and deep learning techniques to classify cancer directly using tissue images.
-
-We actually reached on precision of around 97 percent, which is really great.
-
-And if we can see here, this is kind of the confusion matrix that we achieved.
-
-We have found that we correctly classified four or five points.
-
-We correctly classified sixty six points.
-
-So in total classified information basically of these two numbers.
-
-And here we misclassified only three samples.
-
-And a key element as well here is the misclassification was actually when the class was zero,
-
-or the prediction was zero.
-
-However, the target class was one.
-
-so recall zero with the kids malignant and one indicates benign, which means our even
-
-our misclassified points would actually define what actually is OK.
-
-It's a kind of a type one error indicating that, we didn't say that the patient, for example,
-
-is didn't have cancer and he had one actually the patient we said that the patient or we we assume that
-
-the patient, the prediction, the patient said that the patient has cancer.
-
-However, he was just OK.
-
-He was just fine.
-
-He just had a benign tumor.
+We actually reached on precision of around 97 percent, training an SVM model to make accurate breast cancer classifications, improving the performance of an SVM model, and testing model accuracy using Confusion Matrix.
 
 And let's build a cancer free world.
+
 ## Acknowledgements
 
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
@@ -108,9 +58,9 @@ Target class:
    - Benign
 
 
-training an SVM model to make accurate breast cancer classifications, improving the performance of an SVM model, and testing model accuracy using Confusion Matrix.
 
 Project Task
+
 In this study, my task is to classify tumors into malignant (cancerous) or benign (non-cancerous) using features obtained from several cell images.
 Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
 
@@ -119,20 +69,26 @@ If classification of observations is “linearly separable”, SVM fits the “d
 
 
 Model Training
+
 From our dataset, let’s create the target and predictor matrix
 “y” = Is the feature we are trying to predict (Output). In this case we are trying to predict if our “target” is cancerous (Malignant) or not (Benign). i.e. we are going to use the “target” feature here.
 “X” = The predictors which are the remaining columns (mean radius, mean texture, mean perimeter, mean area, mean smoothness, etc.)
 
 
 Create the training and testing data
+
 Now that we’ve assigned values to our “X” and “y”, the next step is to import the python library that will help us split our dataset into training and testing data.
 Training data = the subset of our data used to train our model.
 Testing data = the subset of our data that the model hasn’t seen before (We will be using this dataset to test the performance of our model).
 
 Improving our Model
+
+
 The first process we will try is by normalizing our data
 Data normalization is a feature scaling process that brings all values into range [0,1]
 X’ = (X-X_min) / (X_max — X_min)
+
+
 ## Appendix
 
 
@@ -149,13 +105,16 @@ Number of Instances:
 
 569
 
+
 Area:
 
 Life
 
+
 Attribute Characteristics:
 
 Real
+
 
 Number of Attributes:
 
@@ -165,6 +124,7 @@ Date Donated
 
 1995-11-01
 
+
 Associated Tasks:
 
 Classification
@@ -172,6 +132,7 @@ Classification
 Missing Values?
 
 No
+
 
 Number of Web Hits:
 
@@ -202,7 +163,7 @@ Nick Street
 
 Data Set Information:
 
-Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image. A few of the images can be found at [Web Link]
+Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image. A few of the images can be found at 
 
 Separating plane described above was obtained using Multisurface Method-Tree (MSM-T) [K. P. Bennett, "Decision Tree Construction Via Linear Programming." Proceedings of the 4th Midwest Artificial Intelligence and Cognitive Science Society, pp. 97-101, 1992], a classification method which uses linear programming to construct a decision tree. Relevant features were selected using an exhaustive search in the space of 1-4 features and 1-3 separating planes.
 
@@ -238,28 +199,18 @@ Relevant Papers:
 First Usage:
 
 W.N. Street, W.H. Wolberg and O.L. Mangasarian. Nuclear feature extraction for breast tumor diagnosis. IS&T/SPIE 1993 International Symposium on Electronic Imaging: Science and Technology, volume 1905, pages 861-870, San Jose, CA, 1993.
-[Web Link]
 
 O.L. Mangasarian, W.N. Street and W.H. Wolberg. Breast cancer diagnosis and prognosis via linear programming. Operations Research, 43(4), pages 570-577, July-August 1995.
-[Web Link]
 
 Medical literature:
 
 W.H. Wolberg, W.N. Street, and O.L. Mangasarian. Machine learning techniques to diagnose breast cancer from fine-needle aspirates. Cancer Letters 77 (1994) 163-171.
-[Web Link]
 
 W.H. Wolberg, W.N. Street, and O.L. Mangasarian. Image analysis and machine learning applied to breast cancer diagnosis and prognosis. Analytical and Quantitative Cytology and Histology, Vol. 17 No. 2, pages 77-87, April 1995.
 
 W.H. Wolberg, W.N. Street, D.M. Heisey, and O.L. Mangasarian. Computerized breast cancer diagnosis and prognosis from fine needle aspirates. Archives of Surgery 1995;130:511-516.
-[Web Link]
 
 W.H. Wolberg, W.N. Street, D.M. Heisey, and O.L. Mangasarian. Computer-derived nuclear features distinguish malignant from benign breast cytology. Human Pathology, 26:792--796, 1995.
-[Web Link]
-
-See also:
-
-[Web Link]
-[Web Link]
 
   
 ## Authors
